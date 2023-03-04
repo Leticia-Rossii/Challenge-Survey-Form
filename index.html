@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulário de Pesquisa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oxygen&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="caixa">
+      <h1 class="titulo">Formulário de Pesquisa</h1>
+      <p class="descricao">Coleta de dados acerca do conhecimento voltado aos jogos da atualidade.</p>
+
+      <form>
+        <fieldset class="primeiro-container">
+          <label  for="nome">▶ Nome :</label>
+          <input type="text" id="nome" name="nome" maxlength="50" required placeholder="Digite seu nome.."/>
+          
+
+          <label  for="email">▶ Email :</label>
+          <input type="email" id="email" name="email" maxlength="50" required placeholder="Digite seu email.."/>
+    
+
+          <label  for="idade">▶ Idade</label>
+          <input type="number" id="idade" name="idade" min="10" max="100" placeholder="Idade" maxlength="3" required/>
+          
+
+          <label for="lista-genero">▶ Gênero</label>
+          <select id="lista-genero"required>
+            <option value=""></option>
+            <option value="1">Feminino</option>
+            <option value="2">Masculino</option>
+            <option value="3">Outros..</option>
+          </select>
+          
+        </fieldset>
+
+        <fieldset class="segundo-container" >
+          <legend>▷ Qual o melhor console na sua opinião :</legend>
+         
+          <label>
+            <input type="radio" name="videogame-radio" value="xbox" class="inline" required/>Xbox
+          </label>
+          <label>
+            <input type="radio" name="videogame-radio" value="nintendo" class="inline"/>Nintendo
+          </label>
+          <label>
+            <input type="radio" name="videogame-radio" value="ps" class="inline"/>Playstation
+          </label>
+    
+        </fieldset>
+
+        <fieldset class="segundo-container">
+          <legend>▷ Selecione todos os jogos que conhece ou já ouviu falar :</legend>
+          <label>
+            <input type="checkbox" value="tlou" class="inline"/> The Last of Us
+          </label>
+          <label>
+            <input type="checkbox" value="rdr2" class="inline"/> Red Dead Redemption 2
+          </label>
+          <label>
+            <input type="checkbox" value="tw3" class="inline"/> The Witcher 3
+          </label>
+          <label>
+            <input type="checkbox" value="skyrim" class="inline"/> The Elder Scrolls V: Skyrim
+          </label>
+          <label>
+            <input type="checkbox" value="gow" class="inline"/> God Of War
+          </label>
+        </fieldset>
+
+        <label for="text-area">◆ Nos recomende algum jogo.. (opcional)</label>
+        <textarea rows="5" cols="50" name="recomendacao-jogo" id="text-area" placeholder="Ex:Call of Duty, .."></textarea>
+
+        <input type="submit" id="submit" value="Enviar">
+
+      </form>
+  </div>
+  </body>
+</html>
